@@ -47,7 +47,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_test
-    
+    environment: phpwvl.production
+
     steps:
       # - name: Retrieve build output from previous job
       #   uses: actions/download-artifact@v1
