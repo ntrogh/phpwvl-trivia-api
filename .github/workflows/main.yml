@@ -11,8 +11,8 @@ jobs:
   build_and_test:
     strategy:
       matrix:
-        node-version: ['8', '10', '12']
-        os: ['ubuntu-latest', 'windows-latest']
+        node-version: ['12']
+        os: ['ubuntu-latest']
 
     runs-on: ${{ matrix.os }}
 
